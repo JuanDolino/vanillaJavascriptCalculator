@@ -8,13 +8,13 @@
   </head>
   <body>
     <main class="calculatorBody">
-      <div class="displayResult">
+      <div class="display">
         <div class="previousValue"></div>
         <div class="actualOperation"></div>
-        <div class="result">0</div>
+        <div class="displayNumber">0</div>
       </div>
       <button class="clearAllButton">AC</button>
-      <button class="backspaceButton">
+      <button class="backspaceButton" onclick="backspaceDisplayNumber()">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           viewBox="0 0 24 24"
@@ -31,29 +31,24 @@
         </svg>
       </button>
 
-      <button class="number-1">1</button>
-      <button class="number-2">2</button>
-      <button class="number-3">3</button>
-      <button class="divideOperatorButton operator">/</button>
+      <button class="number-1" onclick="setDisplayNumber(this.innerText)">1</button>
+      <button class="number-2" onclick="setDisplayNumber(this.innerText)">2</button>
+      <button class="number-3" onclick="setDisplayNumber(this.innerText)">3</button>
+      <button class="divideOperatorButton operator" onclick="setOperator(this.innerText)">/</button>
 
-      <button class="number-4">4</button>
-      <button class="number-5">5</button>
-      <button class="number-6">6</button>
-      <button
-        class="multiplyOperatorButton operator"
-        onclick="setOperator(this)"
-      >
-        x
-      </button>
+      <button class="number-4" onclick="setDisplayNumber(this.innerText)">4</button>
+      <button class="number-5" onclick="setDisplayNumber(this.innerText)">5</button>
+      <button class="number-6" onclick="setDisplayNumber(this.innerText)">6</button>
+      <button class="multiplyOperatorButton operator" onclick="setOperator(this.innerText)">x</button>
 
-      <button class="number-7">7</button>
-      <button class="number-8">8</button>
-      <button class="number-9">9</button>
-      <button class="minusOperatorButton operator">-</button>
+      <button class="number-7" onclick="setDisplayNumber(this.innerText)">7</button>
+      <button class="number-8" onclick="setDisplayNumber(this.innerText)">8</button>
+      <button class="number-9" onclick="setDisplayNumber(this.innerText)">9</button>
+      <button class="minusOperatorButton operator" onclick="setOperator(this.innerText)">-</button>
 
-      <button class="number-0">0</button>
-      <button class="resultButton operator">=</button>
-      <button class="plusOperatorButton operator">+</button>
+      <button class="number-0" onclick="setDisplayNumber(this.innerText)">0</button>
+      <button class="resultButton operator" onclick="doOperation()">=</button>
+      <button class="plusOperatorButton operator" onclick="setOperator(this.innerText)">+</button>
     </main>
 
     <script src="src/scripts.js"></script>
