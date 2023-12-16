@@ -15,6 +15,17 @@ body {
   background-color: #f6f6f6;
 }
 
+@keyframes previousValueAnimation {
+  0% {
+    top: 15px;
+  }
+
+  100% {
+    top: 5px;
+    opacity: 1;
+  }
+}
+
 .calculatorBody {
   max-width: 450px;
   width: 100%;
@@ -60,7 +71,7 @@ body {
   grid-area: number-0;
 }
 
-.currentOperation {
+.currentOperator {
   position: absolute;
   left: 10px;
   font-size: 48px;
@@ -70,7 +81,7 @@ body {
 .previousValue {
   color: #3a4454;
 
-  /* opacity: 0; */
+  opacity: 0;
   transition: 0.2s;
 
   position: absolute;
