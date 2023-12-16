@@ -1,3 +1,3 @@
-## A SIMPLE CALCULATOR IN PURE JAVASCRIPT
+## VANILLA JAVASCRIPT CALCULATOR
 
 That project is a simple calculator built with HMTL, CSS and JavaScript.
